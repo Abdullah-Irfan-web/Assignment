@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Employee||Data</title>
+        <link rel="stylesheet" href="/stylesheets/update.css">
+    </head>
+    <body>
+        <div>
+            <h1>Update Employee</h1>
+            <form action="/edit/<%=employee.id%>" method="POST">
+             
+              <input type="text" id="name" value="<%=employee.name%>" name="empname" >
+          
+              
+              <input type="tel"  pattern="[0-9]{10}" id="" value="<%=employee.phone%>" name="pnumber" >
+          
+              <input type="email" id="" value="<%=employee.email%>" name="email" >
+              <input type="text" id="" value="<%=employee.hobbies%>" name="ehobby" >
+             
+              
+            
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          
+    </body>
+</html>

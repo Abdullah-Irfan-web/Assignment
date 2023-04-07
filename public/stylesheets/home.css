@@ -1,0 +1,140 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar{
+   
+ padding:15px 0px;
+ 
+     width:100%;
+     font-family: 'Ubuntu', sans-serif;
+     background: crimson;
+ 
+ }
+ .navbar .max-width{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin: 2px 23px;
+     
+ 
+ }
+ .navbar .logo a{
+   text-decoration: none;
+   font-size: 35px;
+   font-weight: bolder;
+   color: white;
+ 
+ }
+ .navbar .logo span{
+     color: white;
+     font-size: 22px;
+ }
+ .navbar .max-width li{
+ display: inline-block;
+ list-style: none;
+ }
+  ul li a{
+     text-decoration: none;
+     font-size: 18px;
+     font-weight: bold;
+     margin-left: 25px;
+     font-family: 'Ubuntu', sans-serif;
+     letter-spacing: 3px;
+     color: white;
+     transition: all 0.7s ease;
+ }
+ ul li a:hover{
+     border-radius: 10px;
+     background-color: white;
+     color: crimson;
+  
+ }
+ #customers {
+   position: absolute;
+  top: 25%;
+   
+   margin-left: 10%;
+   border-radius: 9px;
+  
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  #btn{
+    background-color: green;
+      color: white;
+      padding: 9px 9px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: bold;
+      width: 200px;
+      height: 50px;
+      cursor: pointer;
+  }
+  #customers td, #customers th {
+    
+    border: 1px solid #ddd;
+   
+    padding: 20px 20px;
+
+  }
+  #customers th{
+    font-weight: bold;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#4CAF50;
+    color: white;
+  }
+  #send{
+    border: none;
+    
+    
+  }
+  #ed{
+      background-color: blue;
+      color: white;
+      padding: 9px 9px;
+      border-radius: 9px;
+      text-decoration: none;
+      
+  }
+  #del{
+    background-color: red;
+    color: white;
+    padding: 9px 9px;
+    border-radius: 9px;
+    text-decoration: none;
+   
+}
+.smsg{
+ 
+  width: 600px;
+  border-radius: 6px;
+ border: 2px solid green;
+  position: absolute;
+  top: 18%;
+  left: 18%;
+  
+}
+.smsg p{
+  font-size: 23px;
+  font-weight: bold;
+  padding: 7px 7px;
+  color:green;
+ 
+
+  background-color:rgb(235, 195, 195);
+}

@@ -1,0 +1,79 @@
+<html>
+    <head>
+<title>Employee||data</title>
+
+        <link rel="stylesheet" href="/stylesheets/home.css">
+    </head>
+
+    <body>
+        
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="/">Employee</a><span>Data</span></div>
+                <ul>
+                    <li><a href="/employee/new">Add New Data</a></li>
+                    <li><a href="/employee/search">Search</a></li>
+                  
+                </ul>
+    
+            </div>
+        </nav>
+        <%  if(success_msg && success_msg!=''){ %>
+            <div class="smsg">
+                <p><%=success_msg%></p></div>
+      <%  }  else if(error_msg && error_msg!='') { %>
+      
+        <div class="smsg"><%=error_msg%></div>
+        <% } %>
+       
+
+        <table id="customers">
+            <form action="/send" method="POST">
+            <tr>
+                <th>Select</th>
+                <th>Id</th>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Hobbies</th>
+              <th>Operations</th>
+            </tr>
+           
+            <% employee.forEach((emp)=>{%>
+                <tr>
+                   
+                    <td> 
+                    <input type="checkbox" value="<%=emp.id%>" name="select" id="">
+                    </td>
+                    <td><%=emp.empid%></td>
+                    <td><%=emp.name%></td>
+                    <td><%=emp.phone%></td>
+                    <td><%=emp.email%></td>
+                    <td><%=emp.hobbies%></td>
+                    <td><a href="/edit/<%= emp.id%>" id="ed">Edit</a>
+                        <a href="/delete/<%= emp.id%>" id="del">Delete</a>
+                  </td>
+                  </tr>
+          <%  })%>
+          <% if(employee!=''){%>
+            <tr align="center">
+                <td id="send">
+                    
+                    <button  id="btn" type="submit"> Send Selected Data</button>
+            
+                </td>
+              </tr>
+         <% } %>
+         
+         
+           
+              
+         
+        </form>
+           
+          </table>
+        
+           
+        
+    </body>
+</html>

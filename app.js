@@ -165,8 +165,8 @@ let transport=nodemailer.createTransport({
     secure:false,
     requireTLS:true,
     auth:{
-        user:'abdirfanwork7007@gmail.com',
-        pass:'wwaoazdunuktytbk'
+        user:'ubaid.irfan7007@gmail.com',
+        pass:'fvbctnowsmmxeowe'
     }
 });
 
@@ -233,6 +233,7 @@ else{
          else{
              console.log("Email sent"+ info.response);
              data='';
+             res.send('Data sent Successfully')
          }
      })
     

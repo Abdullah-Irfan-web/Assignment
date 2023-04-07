@@ -220,7 +220,7 @@ else{
  console.log(data);
  const mail={
      from:"abdirfanwork@gmail.com",
-     to:"abd.irfan7007@gmail.com",
+     to:"info@redpositive.in",
      subject:"Sending Employee Data",
      text:data
      }
